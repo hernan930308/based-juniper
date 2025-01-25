@@ -4,11 +4,12 @@
 	"dependencies": {
 		"@barba/core": "^2.9",
 		"@barba/prefetch": "^2.1",
-		"bootstrap": "^5.3",
+		"@tailwindcss/cli": "^4.0.0",
 		"cypress": "^13.9",
 		"imagesloaded": "^5.0",
 		"jquery": "^3.7",
-		"postcss": "^8.4"
+		"postcss": "^8.4",
+		"tailwindcss": "^4.0.0"
 	},
 	"devDependencies": {
 		"@parcel/transformer-sass": "^2.12",
@@ -24,6 +25,7 @@
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"dev": "parcel watch src/js/_app.js blocks/**/*.js blocks/**/*.scss --public-url ./ --no-source-maps",
 		"build": "parcel build src/js/_app.js src/css/_app.scss blocks/**/*.js blocks/**/*.scss --public-url ./",
+		"tailwind": "npx tailwindcss -i ./src/css/style.css -o ./dist/css/styles.css",
 		"build-editor": "parcel build src/js/_editor.js --public-url ./",
 		"cypress": "./node_modules/.bin/cypress open",
 		"flint": "eslint --fix ./src/js/**/*",

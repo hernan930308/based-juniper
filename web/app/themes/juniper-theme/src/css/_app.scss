@@ -34,8 +34,7 @@ $gridWidth: 1366px;
 $toplayer: 100;
 
 // header height
-
-@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+@import "tailwindcss";
 
 // mixins
 @import 'base/mixins';
